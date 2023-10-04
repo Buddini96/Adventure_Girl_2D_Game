@@ -14,7 +14,7 @@
         if (idleImageNumber == 11){
             idleImageNumber = 1;
         }
-        girl.src = "assests/imges/idle ("+idleImageNumber+").png";
+        girl.src = "assests/imges/idle("+idleImageNumber+").png";
     }
 
     function idleAnimationStart(){
@@ -29,9 +29,10 @@
         if (runImageNumber == 9){
             runImageNumber = 1;
         }
-        girl.src = "assests/imges/run ("+runImageNumber+").png";
+        girl.src = "assests/imges/run("+runImageNumber+").png";
     }
 
+    //run animation
     function runAnimationStart(){
         runAnimationNumber = setInterval(runAnimation,100);
         clearInterval(idleAnimationNumber);
@@ -58,7 +59,7 @@
             runImageNumber = 0;
             runAnimationStart();
         }
-        girl.src = "assests/imges/jump ("+jumpImageNumber+").png";
+        girl.src = "assests/imges/jump("+jumpImageNumber+").png";
     }
 
     function jumpAnimationStart(){
@@ -123,6 +124,10 @@
             if (i >=5 ){
                 boxMarginLeft = boxMarginLeft + 300;
             }
+        }
+
+        function addBarrier2(){
+
         }
 
     }
